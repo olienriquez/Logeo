@@ -8,4 +8,5 @@ urlpatterns = [
 	path('login/', VistaLogin.as_view(), name='login'),
 	path('registro/', VistaRegistro.as_view(), name='registro'),
 	path('login/cerrar', VistaCerrar.as_view(), name='cerrar'),
+	path('registro/login',VistaLogin.as_view(),),
 ]

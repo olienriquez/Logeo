@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponseRedirect
 from django.views import View
 from .forms import LoginForm, SignUpForm
 from django.contrib import messages, sessions
@@ -79,4 +79,3 @@ class VistaCerrar(View):
 		messages.info(request, 'Se ha cerrado la sesion')
 		return redirect('login')
 
-		
